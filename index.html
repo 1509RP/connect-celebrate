@@ -245,7 +245,7 @@ function renderModal() {
 }
 
 function changeTab(tab) { state.activeTab = tab; render(); }
-function updateField(field, value) { state.currentEvent[field] = value; render(); }
+function updateField(field, value) { state.currentEvent[field] = value; }
 function createEvent() {
     if(!state.currentEvent.title || !state.currentEvent.date || !state.currentEvent.time) {
         alert('Please fill in Event Title, Date, and Time');
@@ -280,4 +280,5 @@ function sendInvite(method) {
 render();
 </script>
 </body>
+
 </html>
